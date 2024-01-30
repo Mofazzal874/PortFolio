@@ -1,0 +1,207 @@
+/* The universal selector (*) selects all HTML elements on the page. */
+* {
+    box-sizing: border-box;
+}
+
+/* class selector */
+.city {
+    background-color: tomato;
+    color: white;
+    border: 20px;
+    margin: 20px;
+    padding: 20px;
+    transition: 0.2s;
+    font: 18px;
+    border: 1px solid #ffffff00;
+}
+
+/* id selector */
+#myHeader {
+    background-color: lightblue;
+    color: black;
+    padding: 40px;
+    text-align: center;
+}
+
+/* class selector */
+.redElement {
+    color: red;
+}
+
+/* class selector */
+.bgBlue {
+    background-color: blue;
+}
+
+
+/* ELement selector */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+/* Element selector */
+th,
+td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+.test {
+    text-decoration: none;
+}
+
+.test:visited {
+    color: cyan;
+}
+
+.city:hover {
+    background-color: #ffffff00;
+    color: tomato;
+    font: 19px;
+    border: 1px solid tomato;
+}
+
+
+/* group selector */
+span,
+footer {
+    background-color: aqua;
+    color: rgb(17, 2, 30);
+}
+
+/* CSS grouping Selector */
+#para,
+h4,
+h6 {
+    color: red;
+    background-color: beige;
+}
+
+
+
+
+
+
+/* CSS Box Model */
+
+.container {
+    background-color: rgb(9, 228, 248);
+    border: 3px solid rgb(0, 17, 255);
+    margin: 10px;
+    /* we can also set margin/padding for top , right , bottom , left like this */
+    /* padding-top: 79px;
+    padding-right:79px ; 
+    padding-bottom: 79px ;
+    padding-left: 79px; */
+
+    /* Or you can also set padding in a single line of code like this */
+    padding: 23px 56px 6px 78px;
+    /*padding = top right bottom left*/
+    /* You can remember it in a anticlockwise manner  */
+    border-radius: 23px;
+
+}
+
+
+/* css borders */
+
+p.dotted {
+    border-style: dotted;
+}
+
+p.dashed {
+    border-style: dashed;
+}
+
+p.solid {
+    border-style: solid;
+}
+
+p.double {
+    border-style: double;
+}
+
+
+
+/* Border appear as if it is carved inside the canvas */
+p.groove {
+    border-width: 20px 10px;
+    border-color: beige;
+    border-style: groove;
+}
+
+
+/* opposite of groove. Border appear as if it is carved out of canvas */
+p.ridge {
+    border-width: 20px 10px;
+    border-color: beige;
+    border-style: ridge;
+}
+
+
+
+/* contents appear as if they pushed into the page */
+p.inset {
+    border-style: inset;
+}
+
+/* contents appear as if they popped out of page */
+p.outset {
+    border-style: outset;
+}
+
+p.none {
+    border-style: none;
+}
+
+p.hidden {
+    border-style: hidden;
+}
+
+p.mix {
+    border-style: dotted dashed solid double;
+}
+
+/* shorthand property for css borders
+ */
+.anyName{
+    border :5px solid red;  
+    /* border-width border-style border-color */
+}
+
+/* unvisited link */
+a:link {
+    color: red;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: green;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
+
+
+
+
+
+
+/* CSS media query */
+
+
+@media all and (max-width:300px){
+    body{
+        color:blue ; 
+    }
+}

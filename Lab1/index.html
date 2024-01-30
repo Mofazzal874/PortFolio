@@ -1,0 +1,316 @@
+<!doctype html>
+<html "lang=en">
+
+<head>
+    <title>This is the first webpage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- The below linking is called external css  -->
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
+</head>
+
+<body>
+    <p> This is a paragraph</p>
+    <p><i>This is italic text</i></p>
+    <p><u>This is underlined</u></p>
+    <h1><b>this is a bold heading 1</b></h1>
+    <p>this is <sub>subscript></sub> and this is <sup>superscript</sup></p>
+    <p style="color:red;">This is a red paragraph</p>
+    <p style="color:blue;">This is a blue paragraph</p>
+    <h2> Unordered List with Square Bullets</h2>
+    <div>
+        <ul style="list-style-type:square;">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+
+        </ul>
+    </div>
+
+    <div>
+        <ol type="1">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+
+    </div>
+    <p style="border: 1px solid black"> Hello World</p>
+    <div style=" border : 1px solid rgb(130, 64, 64)"> Hello world</div>
+    <p> The P and the DIV elements are both block elements and they will walways start on a new line and the up the full
+        width available(stretches out to the left and right as far as it can.)</p>
+    <p> This is a inline span <span style="border:1px solid black">Hello world</span>
+        elements inside a paragraph.</p>
+
+    <div style="background-color:black ; color:white; padding:1px; ">
+        <h2> What about the city of London </h2>
+        <p> London is the capital city of England . It is the most populous city in the United Kingdom , with a
+            metropolitan area of over 13 million inhabitants.</p>
+        <p> Standing on the River Thames , London has been a major settlement for two millennia , its history going back
+            to its founding by the Romans , who named it London.</p>
+
+    </div>
+
+    <h1>The span element</h1>
+    <p>My mother has <span style=" color:brown;font-weight:bold">brown</span> and My father has
+        <span style="color:darkred; font-weight:bold">Dark Brown</span> eyes .
+    </p>
+    <br>
+    <br>
+    <div>
+        <h1> HTML classes element</h1>
+        <ul style="list-style-type: style type fill;">
+            <li>
+                <p> Html classes can be used by <span style=" color : blue ; font-weight:bold">Javascript</span> to
+                    access and manipulate elements with the specific class name. </p>
+            </li>
+            <li>
+                <p> Class names are <span style="color:red; font-weight:bold">case-sensitive</span></p>
+            </li>
+            <li>
+                <p> Classes can used in <span style="color:red; font-weight:bold">Any</span> HTML element</p>
+
+            </li>
+        </ul>
+    </div>
+
+    <h1>This is an example of HTML class syntax</h1>
+    <p> The class is defined in the head section</p>
+    <div class="city">
+        <h2>London </h2>
+        <p>The city with the historic things stolen from different colony when britain was a colonial country.</p>
+    </div>
+    <div class="city">
+        <h2> Paris</h2>
+        <p>It is another great city with historical importance.It can be called the capital of Art.</p>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <th>Header 1</th>
+                <th colspan="2">Header 2</th>
+                <th>Header 3</th>
+            </tr>
+            <tr>
+                <td>Row 1, Cell 1</td>
+                <td rowspan="2">Row 1, Cell 2<br>Spanning 2 rows</td>
+                <td>Row 1, Cell 3</td>
+                <td>Row 1, Cell 4</td>
+            </tr>
+            <tr>
+                <td>Row 2, Cell 1</td>
+                <!-- This cell is merged with the one above -->
+                <td>Row 2, Cell 3</td>
+                <td>Row 2, Cell 4</td>
+            </tr>
+            <tr>
+                <td colspan="2">Row 3, Cell 1<br>Spanning 2 columns</td>
+                <td>Row 3, Cell 3</td>
+                <td>Row 3, Cell 4</td>
+            </tr>
+        </table>
+
+    </div>
+    <div>
+        <h1> HTML Id syntax</h1>
+        <h1 id="myHeader">My Header</h1>
+    </div>
+    <div>
+        <button type="button" onclick="alert('Hello World')">Click Me!</button>
+    </div>
+    <a href="https://www.google.com" class="test">sfdgdf</a>
+
+
+    <div>
+        <h1>The <bold>fieldset</bold> and <bold>legend </bold> element</h1>
+        <ul>
+            <li>Fieldset is used to group the related data of a form ..</li>
+            <li>Legend is used to name the fieldset </li>
+        </ul>
+        <br>
+        <p>Example</p>
+        <fieldset>
+            <legend>Personalia:</legend>
+            <label for ="username" id  = "fname" name = "fname" value = "John doe" placeholder = "Your name">User Name:</label>
+            <input type = "text" id = "username" name = "userName" ><br>
+            <label for ="Password" id = "pass" name = "password" value = "" placeholder = "your password">Password:</label>
+            <input type = "password" id = "pass" name = "Password"><br>
+            <input type = "submit" value = "submit"><br>
+
+        </fieldset>
+
+    </div>
+    <div>
+        <form oninput="result.value=parseInt(x.value)+parseInt(y.value)">
+            <label for="x">Enter a number:</label>
+            <input type="range" id="x" name="x" value="50"> <!-- Input 1: A range input -->
+          
+            <label for="y">Enter another number:</label>
+            <input type="number" id="y" name="y" value="50"> <!-- Input 2: A number input -->
+           <p> Sum: <output name="result" for="x y" value="Default value"></output> </p><!-- Output: Displays the sum of the two inputs -->
+          </form>
+          
+    </div>
+    <div>
+        <h2>The method Attribute</h2>
+        <p> This form will be submitted using the post method:</p>
+        <form action="/action_page.php" target = "blank" method = "post">
+            <label for = "fname" >First name: </label><br>
+            <input type = "text" id = "fname" name = "fname" value = "john"><br>
+            <label for = "lname" >Last name: </label><br>
+            <input type = "text" id = "lname" name = "lname" value = "doe"><br>
+            <label for = "pass" >password: </label><br>
+            <input type = "password" id = "password" name = "pass" placeholder = "Enter your password" ><br>
+            <input type = "submit" value = "submit">
+            <p> after you submit , notice that , unlike the GET method  , the form values are not NOT visible in the address bar of the new brower tab.</p>
+        </form>
+    </div>
+    <div>
+        <h1>CSS Selectors</h1>
+        <p  class = "bgBlue redElement">This is a simple paragraph to demonstrate CSS selectors</p>
+        <p>This is a another simple paragraph to demonstrate CSS selectors</p>
+        <p>This is a another simple paragraph to demonstrate CSS selectors</p>
+
+
+        <span>This is a span</span>
+          
+        <footer>This is a footer , which has same color as the span color.This is called CSS group  selector</footer>
+    </div>
+
+
+    <div>
+        <P >Grouping selectors</P>
+        <p id = "para">This is paragraph</p>
+        <h4>this is heading4</h4>
+        <h6>This is heading6</h6>
+        <h6>paragraph , heading 4 ,, and heading6 and this line is grouped together to have the same design.see the style.css </h6>
+    </div>
+
+    <div class="container">
+        <h3 id="first">This is my heading</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet qui atque cum soluta, libero aliquid repellat quos. Esse delectus aliquam natus quisquam numquam?</p>
+    </div>
+    <div class="container">
+        <h3 id="second">This is my heading</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet qui atque cum soluta, libero aliquid repellat quos. Esse delectus aliquam natus quisquam numquam?</p>
+    </div>
+    <div class="container">
+        <h3 id="third">This is my heading</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet qui atque cum soluta, libero aliquid repellat quos. Esse delectus aliquam natus quisquam numquam?</p>
+    </div>
+    <div>
+        <h3>css border style</h3>
+        <p class="dotted">dotted border</p>
+        <p class="dashed">Dashed border</p>
+        <p class="solid">Solid border</p>
+        <p class="double">Double Border</p>
+        <p class="groove">Grooved border</p>
+        <p class="ridge">Ridged border</p>
+        <p class="inset">Insetted border</p>
+        <p class="outset">outsetted border</p>
+        <p class="none">no border</p>
+        <p class="hidden">hidden border</p>
+        <p class="mix">mixed border</p>
+    </div>
+    <div>
+        <h3>CSS icons + CSS links</h3>
+        <p> Font Awesome icons webisite</p>
+        <a href ="https://fontawesome.com/">Font Awesome website</a>
+
+
+    </div>
+    <br><br><br>
+    <div>
+        <legend></legend>
+        <fieldset>
+            <ul>
+                <li><b>This is the end of HTML and CSS Bsics</b></li>
+                <li><b>Now to learn about CSS FlexBox and CSS Grid , go to flexbox.html and grid.html files </b></li>
+            </ul>
+        </fieldset>
+    </div>
+    
+    <h1>CSS media query</h1>
+    <p>Media query is very important for mobile devices</p>
+    <p>Flexbox.css also have some examples on media query , check that..</p>
+    <br>
+    
+    <pre style="background-color:bisque;"><code ">@media media-type and (media-feature/media query selector) {
+        /* CSS rules to apply when the media query conditions are met */
+    }</code></pre>
+    <p>Types of Devices(media-type)</p>
+    <ul>
+        <li>Screen-desktop ,phone</li>
+        <li>print device - print the page </li>
+        <li>speech device-Text to speech , screen reader</li>
+        <li>all - to select all types of devices</li>
+    </ul>
+
+    <p><b>Example:</b></p>
+    <pre style="background-color: beige; font-size: 15px;"><code>
+        @media all and (max-width:500px){
+            body{
+                color:blue ; 
+            }
+        }
+
+    N.B: here you can omit the "all and" and write like:
+    @media (max-width:500px){
+        body{
+            color:blue ; 
+        }
+    }
+    because by default "all and" is putter there you u don't write it explicitly.
+
+    </code></pre>
+    <h3>Combining Multiple Conditions:</h3>
+    <pre style="background-color: beige;font-size:15px"><code>
+        /* Styles applied when the viewport width is between 600px and 1200px, and the device is in landscape orientation */
+@media screen and (min-width: 600px) and (max-width: 1200px) and (orientation: landscape) {
+    body {
+        font-size: 16px;
+    }
+}
+
+
+    </code></pre>
+    <h3>Using Media Types:</h3>
+    <pre style="background-color: beige;font-size:15px"><code>
+        /* Styles applied when printing the document */
+@media print {
+    body {
+        color: black;
+    }
+}
+
+
+    </code></pre>
+    <h3>Using logical Operators</h3>
+    <pre style="background-color: beige;font-size:15px"><code>
+        /* Styles applied when the viewport width is NOT greater than 768px */
+@media not screen and (min-width: 768px) {
+    body {
+        color: red;
+    }
+}
+
+
+
+    </code></pre>
+    <br>
+    <pre style="background-color: beige;font-size:15px"><code>
+        /@media (orientation:landscape) , (max-width:500px){  /* or operation*/
+            p{
+                color: black ; 
+            }
+        }
+
+
+
+    </code></pre>
+
+   
+
+    </html>
+    
